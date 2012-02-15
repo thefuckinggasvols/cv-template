@@ -1,0 +1,202 @@
+% ----------------------------------------------------------------------------------------%
+%	Created by Alessandro with TeXShop						%
+%	---->	May 27, 2009										%
+%	Compiled with XeLaTeX, on Mac OS X						%
+%	Licensed under the Creative Commons Attribution 3.0 Unported	%
+%	Share, change, spread, and have fun!						%
+%	http://creativecommons.org/licenses/by/3.0/					%
+%	You can find more at http://aleplasmati.comuv.com				%
+% ----------------------------------------------------------------------------------------%
+
+\documentclass[10pt]{article}
+%!TEX encoding =  UTF-16
+% See geometry.pdf to learn the layout options. There are lots.
+\usepackage[hmargin=1.25cm, vmargin=2cm]{geometry}               
+%symbols - the ones you see on the left of the email and of the phone
+\usepackage{bbding}
+\usepackage{amssymb}
+\usepackage{eurosym}
+%Colors/Graphics
+\usepackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+%Fonts and Tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Linux Libertine O}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+%Setup hyperref package, and colours for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolour}{HTML}{FF0080}	%light purple link for the email
+\definecolor{shade}{HTML}{FFFFFF}	%light blue shade
+\definecolor{text1}{HTML}{2b2b2b}		%text is almost black
+\definecolor{headings}{HTML}{2b2b2b} 	%dark red
+
+\hypersetup{	colorlinks,breaklinks,
+			urlcolor=linkcolour, 
+			linkcolor=linkcolour}
+
+\usepackage{fancyhdr}				%custom footer
+\pagestyle{fancy}
+\fancyhf{}
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with X\LaTeX}
+\renewcommand{\headrulewidth}{0pt}
+
+\usepackage{titlesec}				%custom \section
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}
+	{\color{headings}
+		\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt}
+
+\begin{document}
+
+\color{text1} % set text color for the whole doc
+%<<<< TITLE >>>>
+
+	\par{\centering
+		{\sffamily\Huge Alessandro Plasmati
+	}\\[25pt]\par	
+	%{\Huge\color{headings} 
+	%\fontspec[Variant = 2]{Windsong} 
+	%		Curriculum 
+	%		{Vit\fontspec[Variant = 3]{Windsong}\ae}
+	%	\\[25pt]\par}
+	{\color{white} \hrule} %does this rule really change anything?
+	
+\begin{minipage}[t]{0.5\textwidth} %START of left-hand side minipage
+
+	\vspace{0pt}	%trick
+	
+% <<<< NEW SECTION >>>>	
+\section{Work Experience}
+
+	%WORK EXPERIENCE -1-
+	\raggedleft
+	\emph{Current}, from \textsc{Jan 2009}\par
+
+	\raggedright\large Trader at \textsc{Enoi} s.p.a., Milan\\
+	\emph{Physical Natural Gas Trading}\\[5pt]
+
+	\normalsize{Provided analysis of spreads, in particular time and location spreads, with emphasis on trading opportunities on the curve, also taking into account the availability of storage facilities. Became familiar with logistic implications of physical gas trading and developed knowledge of continental virtual hubs for gas exchange.}\\[10pt]
+
+	%WORK EXPERIENCE -2-
+	\raggedleft
+	\textsc{\normalsize July 2008 -- Oct 2008}\par
+
+	\raggedright
+	\large 1\textsuperscript{st} year Analyst at \textsc{Lehman Brothers}, London\\
+\emph{Commodities Structured Trading}\\[5pt]
+
+\normalsize{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (\textit{ags, oils, precious} and \textit{base metals}), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}\\[10pt]
+
+	%WORK EXPERIENCE -3-
+	\raggedleft
+	\textsc{\normalsize Summer 2007}\par
+
+	\raggedright\large Summer Intern at \textsc{Lehman Brothers}\\
+	\emph{Capital Markets}\\[5pt]
+
+	\normalsize{Received pre-placed offer from the Exotics Trading Desk as a result of very positive review. Rated ``\emph{truly distinctive}'' for Analytical Skills and Teamwork.}\\[10pt]
+
+	%WORK EXPERIENCE -4-
+	\raggedleft
+	\textsc{\normalsize Date 200x}\par
+
+	\raggedright\large Just another \textsc{Work Experience}\\
+	\emph{Capital Markets}\\[5pt]
+
+	\normalsize{Received pre-placed offer from the Exotics Trading Desk as a result of very positive review. Rated ``\emph{truly distinctive}'' for Analytical Skills and Teamwork.}\\[10pt]
+
+% <<<< NEW SECTION >>>>
+\section{International Certificates and Awards}
+	\raggedleft{\textsc{Sep 2006}}\par\raggedright
+	Scholarship for graduate students with an outstanding curriculum (\euro\  30,000)\normalsize\\[3pt]
+	
+	\raggedleft{\textsc{Jun 2006}}\par\raggedright
+	\textsc{Gmat}\textregistered: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile\\ \textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)\\[10pt]
+
+% <<<< NEW SECTION >>>>
+\section{\textsc{Computer Skills}}
+
+	\begin{tabular}{rl}
+		Basic Knowledge:	& \textsc{php}, my\textsc{sql}, \textsc{html}, Access\\
+						& \textsc{Linux}, ubuntu, {\LaTeX}\\ 
+						& \\
+	Intermediate Knowledge: & \textsc{Vba}, Excel, Word, PowerPoint\\
+	\end{tabular}
+	
+\end{minipage} %END of left-hand side minipage
+\hfill
+\begin{minipage}[t]{0.44\textwidth} %START of right-hand side minipage
+	
+	\vspace{0pt} %trick for alignment
+	
+\colorbox{shade}{\textcolor{text1}{
+	\begin{tabular}{c|p{6.8cm}}
+								& Born in Wonderland, Italy July 3, 1912 \\
+		\raisebox{-3pt}{\Phone}  		&+39 123 456789\\
+		\raisebox{-3pt}{\Envelope} 	&\href{mailto:albert.einstein@gmail.com}
+								{einstein.einstein@gmail.com}
+	\end{tabular}
+	}
+}\\[10pt]
+
+\section{Education}
+
+\begin{tabular}{rl}
+ 	
+	%EDUCATION -1-
+	\textsc{July} 2008 & Master of Science in \textsc{Finance}\\
+	 & \textbf{Bocconi University}, Milan\\
+	 & 110/110 \small\emph{summa cum laude}\\
+	 & Major: Quantitative Finance\\
+	 &\normalsize \textsc{Gpa}: 28.61/30\\
+	 &\\
+ 	%EDUCATION -2-
+	\textsc{July} 2006 & Undergraduate Degree in\\
+	 & \textsc{Law} and \textsc{Business Administration}\\
+	 & \textbf{Bocconi University}, Milan\\
+	 &110/110 \small\emph{summa cum laude}\\
+	 &\normalsize \textsc{Gpa}: 29.85/30\\
+	 &\\
+ 	%EDUCATION -3-
+	\textsc{Fall} 2005& Exchange Semester at \\
+	& \textbf{University of Southern California} \\
+	&Los Angeles\\
+	&\\
+	 %EDUCATION -4-
+	\textsc{July} 2003& \textbf{Liceo Classico ``E. Duni''}\\
+	& Matera\\
+	& Final Grade: 100/100
+
+\end{tabular}\\[10pt]
+
+\section{Languages}
+
+\begin{tabular}{rl}
+
+ 	\textsc{Italian}	&	Mothertongue\\
+	\textsc{English}	&	Fluent\\
+	\textsc{French}	&	Basic Knowledge\\
+
+\end{tabular}\\[10pt]
+
+\section{Interests and Activities}
+	Technology\\
+	Open-Source\\
+	Programming\\
+	Paradoxes in Decision Making\\
+	Psychoanalysis\\
+	Behavioural Finance\\
+	Football\\
+	Travelling
+	
+\end{minipage} %END of right-hand side minipage
+
+\end{document}  
